@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #019C86;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4rem;
+
+}
+
+h3{
+    font-family: 'Secular One', sans-serif;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+}
+
+a{
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    color: #707070;
+    transition: all 1s;
+}
+
+hr{
+    width: 15%;
+    size: 3px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header #marker{
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background: #019C86;
+    bottom: -8px;
+    transition: 0.5S;
+    border-radius: 4px;
+}
+
+header .baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baner h1{
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+    margin-left: 70px;
+    color: #707070;
+}
+
+.menu-checkbox, .menu-toggle{
+    display: none;
+}
+
+.baner .menu{
+    position: relative;
+}
+
+.baner .menu li{
+    display: inline-block;
+    padding: 50px 50px 0 50px;
+    list-style-type: none;
+}
+
+header .home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.home p{
+    color: #2A454E;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home .btnCV{
+    flex-flow: flex-end;
+}
+
+.home img{
+    margin-top: 3%;
+    width: 40%;
+}
+
+/* MAIN */
+
+#about, #portfolio, #competence{
+    padding: 10% 0;
+}
+
+/* ABOUT */
+
+#about{
+    background: url('../img/bg-about.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+#about h3{
+    color: #2A454E;
+    text-align: center;
+}
+.a-propos{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.a-propos p{
+    width: 60%;
+    padding: 4%;
+    color: #ffffff;
+}
+
+.a-propos p a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #019C86;
+    border-bottom: 2px solid #ffffff;
+    font-size: 1rem;
+    transition: all 1s;
+    line-height: 4;
+}
+
+.a-propos p a:hover{
+    border: none;
+}
+
+.a-propos img{
+    margin: auto;
+    filter: drop-shadow(0 0 0.75rem #000);
+}
+
+/* PORTFOLIO */
+#portfolio h3{
+    text-align: center;
+}
+
+.projets{
+    display: flex;
+    margin-top: 8%;
+}
+
+.projets article{
+    width: 100vh;
+    margin: 0 5px;
+}
+
+.projets article img{
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.selfstock{
+    position: absolute;
+    width: 55vh;
+    margin-top: -16%;
+    display: none;
+    transition: all 1s;
+}
+
+.integration1, .integration2{
+    position: absolute;
+    width: 55vh;
+    margin-top: -18%;
+    display: none;
+    transition: all 1s;
+}
+
+.sii, .gsb1, .gsb2, .bacfm{
+    position: absolute;
+    width: 55vh;
+    margin-top: -17%;
+    display: none;
+    transition: all 1s;
+}
+
+.imgSelfstock:hover , .imgIntegration1:hover, .imgSii:hover, .imgGsb1:hover, .imgBacfm:hover, .imgIntegration2:hover, .imgGsb2:hover{
+    opacity: 0.2;
+}
+
+.imgIntegration1:hover ~ .integration1, .imgSelfstock:hover ~ .selfstock, .imgSii:hover:hover ~ .sii, .imgGsb1:hover ~ .gsb1, .imgBacfm:hover ~ .bacfm, .imgIntegration2:hover ~ .integration2, .imgGsb2:hover ~ .gsb2{
+    display: block;
+}
+
+/* COMPETENCE */
+
+#competence h3{
+    color: #019C86;
+    text-align: center;
+}
+
+.groupe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 8%;
+}
+
+.groupe article{
+    width: 25%;
+    padding: 30px;
+    transition: all 1s;
+}
+
+.groupe article h3{
+    color: #019C86;
+    text-align: initial!important;
+}
+
+.groupe article p{
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #263238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 a{
+    font-size: 2rem;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 70px;
+}
+
+.liste-reseaux{
+    margin-right: 40px;
+}
+
+.liste-reseaux li{
+    display: inline-block;
+    padding: 30px;
+    list-style-type: none;
+}
+
+.liste-reseaux li a{
+    color: #ffffff;
+}
+
+.liste-reseaux li a:hover{
+    color: #019C86;
+}
+
+@media only screen and (max-width: 375px){
+
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .home, .a-propos, .projets, .groupe{
+        flex-wrap: wrap;
+    }
+
+    .a-propos {
+        justify-content: center;
+    }
+
+    .projets img{
+        width: 375px;
+    }
+
+    .projets article{
+        margin: 0;
+    }
+
+    .groupe article{
+        width: 99%;
+        margin: 1% 0;
+        overflow: hidden;
+    }
+
+    .groupe article p{
+        text-align: initial;
+    }
+
+    .selfstock{
+        margin-top: -44%;
+    }
+
+    .integration1, .integration2{
+        margin-top: -56%;
+    }
+
+    .sii, .bacfm{
+        margin-top: -46%;
+    }
+
+    .gsb1, .gsb2{
+        margin-top: -52%;
+    }
+
+    #about{
+        background-position: 12%;
+    }
+
+    .a-propos p{
+        margin-top: 24%;
+        width: auto;
+    }
+
+    .home img{
+        width: 65%;
+    }
+
+    footer h1 a{
+        font-size: 1rem;
+        font-family: 'Secular One', sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-left: 14px;
+    }
+
+    .liste-reseaux{
+        margin-right: 0;
+    }
+
+    .liste-reseaux li{
+        padding: 12px;
+    }
+
+    .menu, .menu-checkbox{
+        display: none;
+    }
+
+    .menu-toggle{
+        margin: auto;
+    }
+
+    .menu-checkbox:checked ~ nav .menu{
+        display: block;
+        padding: 12% 0;
+    }
+
+    .menu-checkbox:checked ~ nav .menu-checkbox{
+        display: none;
+    }
+
+    .menu li{
+        padding: 0 0 32px 0!important;
+        display: block!important;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+        margin-left: 14px!important;
+        height: 50px!important;
+        width: 80%!important;
+    }
+
+    .baner{
+        flex-wrap: wrap;
+    }
+
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    #marker{
+        display: none;
+    }
+}
