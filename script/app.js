@@ -49,3 +49,6 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+// Mode sombre / clair

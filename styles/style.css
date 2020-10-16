@@ -105,8 +105,24 @@ header .home{
     margin-top: 10px;
 }
 
-.home .btnCV{
-    flex-flow: flex-end;
+.divSci{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.home button{
+    padding: 1% 4%;
+    width: 18%;
+    margin: 2%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid #019C86;
+}
+
+.home button a{
+    color: #019C86;
+    font-size: 1rem;
 }
 
 .home img{
@@ -171,6 +187,7 @@ header .home{
 
 .projets{
     display: flex;
+    justify-content: center;
     margin-top: 8%;
 }
 
@@ -186,7 +203,8 @@ header .home{
 
 .selfstock{
     position: absolute;
-    width: 55vh;
+    width: 62vh;
+    padding: 0 1%;
     margin-top: -16%;
     display: none;
     transition: all 1s;
@@ -194,7 +212,8 @@ header .home{
 
 .integration1, .integration2{
     position: absolute;
-    width: 55vh;
+    width: 62vh;
+    padding: 0 1%;
     margin-top: -18%;
     display: none;
     transition: all 1s;
@@ -202,7 +221,8 @@ header .home{
 
 .sii, .gsb1, .gsb2, .bacfm{
     position: absolute;
-    width: 55vh;
+    width: 62vh;
+    padding: 0 1%;
     margin-top: -17%;
     display: none;
     transition: all 1s;
@@ -370,6 +390,7 @@ footer h1 a{
 
     .menu-toggle{
         margin: auto;
+        display: block;
     }
 
     .menu-checkbox:checked ~ nav .menu{
@@ -403,11 +424,33 @@ footer h1 a{
         justify-content: center;
     }
 
-    .menu-toggle{
-        display: block;
-    }
-
     #marker{
         display: none;
     }
 }
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1e;
+        color: #fefefe;
+    }
+    a {
+        color: #ffffff;
+    }
+    img {
+        filter: grayscale(20%);
+    }
+    #about h3{
+        color: #ffffff;
+    }
+    .home p{
+        color: #707070;
+    }
+    .home button{
+        background-color: #019C86;
+        border: 1px solid #ffffff;
+    }
+    .home button a{
+        color: #ffffff;
+    }
+}*/
