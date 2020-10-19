@@ -403,6 +403,8 @@ footer h1 a{
 
     .projets .clickImg{
         display: block;
+        width: 100%;
+        text-align: initial;
     }
 
     .selfstock{
@@ -454,7 +456,7 @@ footer h1 a{
     }    
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     h2{
         font-size: 3rem;
     }
@@ -486,24 +488,30 @@ footer h1 a{
 }
 
 .projets article img{
-    width: inherit;
+    width: 100%;
+}
+
+.projets .clickImg{
+    display: block;
+    align-self: flex-start;
+    width: 100%;
 }
 
 .selfstock{
     margin-top: -34%;
-    width: inherit;
+    width: 100%;
     text-align: center;
 }
 
 .integration1, .integration2{
     margin-top: -40%;
-    width: inherit;
+    width: 100%;
     text-align: center;
 }
 
 .sii, .gsb1, .gsb2, .bacfm{
     margin-top: -36%;
-    width: inherit;
+    width: 100%;
     text-align: center;
 }
 /* COMPETENCES */
