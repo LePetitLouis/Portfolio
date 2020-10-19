@@ -201,6 +201,10 @@ header .home{
     transition: all 1s;
 }
 
+.projets .clickImg{
+    display: none;
+}
+
 .selfstock{
     position: absolute;
     width: 62vh;
@@ -299,7 +303,7 @@ footer h1 a{
     color: #019C86;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 767px){
 
     h2{
         font-size: 2rem;
@@ -313,75 +317,13 @@ footer h1 a{
         font-size: 1rem;
     }
 
+    /* HEADER */
     .home, .a-propos, .projets, .groupe{
         flex-wrap: wrap;
     }
-
-    .a-propos {
-        justify-content: center;
-    }
-
-    .projets img{
-        width: 375px;
-    }
-
-    .projets article{
-        margin: 0;
-    }
-
-    .groupe article{
-        width: 99%;
-        margin: 1% 0;
-        overflow: hidden;
-    }
-
-    .groupe article p{
-        text-align: initial;
-    }
-
-    .selfstock{
-        margin-top: -44%;
-    }
-
-    .integration1, .integration2{
-        margin-top: -56%;
-    }
-
-    .sii, .bacfm{
-        margin-top: -46%;
-    }
-
-    .gsb1, .gsb2{
-        margin-top: -52%;
-    }
-
-    #about{
-        background-position: 12%;
-    }
-
-    .a-propos p{
-        margin-top: 24%;
-        width: auto;
-    }
-
+    
     .home img{
         width: 65%;
-    }
-
-    footer h1 a{
-        font-size: 1rem;
-        font-family: 'Secular One', sans-serif;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-left: 14px;
-    }
-
-    .liste-reseaux{
-        margin-right: 0;
-    }
-
-    .liste-reseaux li{
-        padding: 12px;
     }
 
     .menu, .menu-checkbox{
@@ -427,9 +369,92 @@ footer h1 a{
     #marker{
         display: none;
     }
+
+    .home button{
+        width: auto;
+    }
+
+    /* ABOUT */
+    .a-propos {
+        justify-content: center;
+    }
+
+    #about{
+        background-position: 12%;
+    }
+
+    .a-propos p{
+        margin-top: 24%;
+        width: auto;
+    }
+
+    /* PORTFOLIO */
+    .projets{
+        justify-content: initial;
+    }
+
+    .projets img{
+        width: 100%;
+    }
+
+    .projets article{
+        margin: 0;
+    }
+
+    .projets .clickImg{
+        display: block;
+    }
+
+    .selfstock{
+        margin-top: -44%;
+        width: 100%;
+    }
+
+    .integration1, .integration2{
+        margin-top: -56%;
+        width: 100%;
+    }
+
+    .sii, .bacfm{
+        margin-top: -46%;
+        width: 100%;
+    }
+
+    .gsb1, .gsb2{
+        margin-top: -52%;
+        width: 100%;
+    }
+
+    /* COMPETENCES */
+    .groupe article{
+        width: 99%;
+        margin: 1% 0;
+        overflow: hidden;
+    }
+
+    .groupe article p{
+        text-align: initial;
+    }
+
+    /* FOOTER */
+    footer h1 a{
+        font-size: 1rem;
+        font-family: 'Secular One', sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-left: 14px;
+    }
+
+    .liste-reseaux{
+        margin-right: 0;
+    }
+
+    .liste-reseaux li{
+        padding: 12px;
+    }    
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
     h2{
         font-size: 3rem;
     }
@@ -488,7 +513,7 @@ footer h1 a{
 }
 
 .groupe article {
-    width: auto;
+    width: 100%;
 }
 /* FOOTER */
 }
