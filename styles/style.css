@@ -429,6 +429,72 @@ footer h1 a{
     }
 }
 
+@media only screen and (max-width: 768px){
+    h2{
+        font-size: 3rem;
+    }
+
+    P{
+        font-size: 1.3rem;
+    }
+/* HEADER */
+.baner .menu li {
+    padding: 50px 30px 0 20px;
+}
+
+.home button{
+    width: auto;
+}
+/* ABOUT */
+.a-propos{
+    align-items: initial;
+}
+
+.a-propos p{
+    font-size: 1rem;
+    padding: 3%;
+    margin-top: 2%;
+}
+/* PORTFOLIO */
+.projets{
+    flex-wrap: wrap;
+}
+
+.projets article img{
+    width: inherit;
+}
+
+.selfstock{
+    margin-top: -34%;
+    width: inherit;
+    text-align: center;
+}
+
+.integration1, .integration2{
+    margin-top: -40%;
+    width: inherit;
+    text-align: center;
+}
+
+.sii, .gsb1, .gsb2, .bacfm{
+    margin-top: -36%;
+    width: inherit;
+    text-align: center;
+}
+/* COMPETENCES */
+.groupe {
+    justify-content: initial;
+    flex-wrap: wrap;
+}
+
+.groupe article {
+    width: auto;
+}
+/* FOOTER */
+}
+
+
+
 /*@media (prefers-color-scheme: dark) {
     body {
         background-color: #1c1c1e;
