@@ -498,18 +498,21 @@ footer h1 a{
 }
 
 .selfstock{
+    left: 0;
     margin-top: -34%;
     width: 100%;
     text-align: center;
 }
 
 .integration1, .integration2{
+    left: 0;
     margin-top: -40%;
     width: 100%;
     text-align: center;
 }
 
 .sii, .gsb1, .gsb2, .bacfm{
+    left: 0;
     margin-top: -36%;
     width: 100%;
     text-align: center;
